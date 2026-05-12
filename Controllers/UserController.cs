@@ -59,7 +59,7 @@ namespace LearnSecureAPI.Controllers
 
             if (userId == null)
             {
-                return Unauthorized();
+                return Ok();
             }
 
             // Busca o usuário com o id informado pelo token

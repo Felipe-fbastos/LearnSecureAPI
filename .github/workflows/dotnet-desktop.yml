@@ -7,12 +7,12 @@ on:
   # Executa quando houver push na branch main
   push:
     branches:
-      - main
+      - Main
 
   # Executa quando houver Pull Request para a branch main
   pull_request:
     branches:
-      - main
+      - Main
 
 # Define os trabalhos (jobs) da pipeline
 jobs:
