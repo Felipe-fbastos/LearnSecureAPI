@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "LearnSecureAPI.Controllers.UserController",
+    "Method": "SingUp",
+    "RelativePath": "User",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "LearnSecureAPI.DTO.SingUpUserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LearnSecureAPI.DTO.SingUpUserDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
