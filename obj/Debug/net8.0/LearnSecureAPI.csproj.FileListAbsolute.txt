@@ -145,3 +145,5 @@ C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\obj\Debug\net8.
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Mapster.dll
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Mapster.Core.dll
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Mapster.DependencyInjection.dll
+C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\obj\Debug\net8.0\LearnSecureAPI.sourcelink.json
+C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
