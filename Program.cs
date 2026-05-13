@@ -63,6 +63,13 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// Garante que banco sempre esteja atualizado
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDataContext>();
+    db.Database.Migrate();
+}
+
 app.Run();
 
 
