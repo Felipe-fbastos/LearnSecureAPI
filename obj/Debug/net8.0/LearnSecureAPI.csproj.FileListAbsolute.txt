@@ -9,6 +9,10 @@ C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Mapster.dll
+C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Mapster.Core.dll
+C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Mapster.DependencyInjection.dll
+C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -128,6 +132,7 @@ C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\obj\Debug\net8.
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\obj\Debug\net8.0\LearnSecureAPI.csproj.CoreCompileInputs.cache
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\obj\Debug\net8.0\LearnSecureAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\obj\Debug\net8.0\LearnSecureAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\obj\Debug\net8.0\LearnSecureAPI.sourcelink.json
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\obj\Debug\net8.0\staticwebassets\msbuild.LearnSecureAPI.Microsoft.AspNetCore.StaticWebAssets.props
@@ -142,8 +147,3 @@ C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\obj\Debug\net8.
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\obj\Debug\net8.0\LearnSecureAPI.pdb
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\obj\Debug\net8.0\LearnSecureAPI.genruntimeconfig.cache
 C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\obj\Debug\net8.0\ref\LearnSecureAPI.dll
-C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Mapster.dll
-C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Mapster.Core.dll
-C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Mapster.DependencyInjection.dll
-C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\obj\Debug\net8.0\LearnSecureAPI.sourcelink.json
-C:\Users\Felipe\Desktop\Estudos_C#\LearnSecureAPI\LearnSecureAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
