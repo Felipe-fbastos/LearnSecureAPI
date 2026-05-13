@@ -20,49 +20,53 @@ O objetivo do projeto foi praticar conceitos fundamentais de backend moderno, in
 * SQL Server
 * Injeção de Dependência
 * Boas práticas de segurança em APIs
+* Implementação de esteira CI/CD profissional
 
 ---
 
 # Tecnologias Utilizadas
 
-* ASP.NET Core
-* Entity Framework Core
-* SQL Server
-* JWT Bearer Authentication
-* BCrypt.Net
-* Mapster
-* Swagger/OpenAPI
+* **Linguagem & Framework:** ASP.NET Core 8
+* **Banco de Dados:** SQL Server
+* **ORM:** Entity Framework Core
+* **Segurança:** JWT Bearer Authentication & BCrypt.Net
+* **Mapeamento:** Mapster
+* **Documentação:** Swagger/OpenAPI
+* **CI/CD:** GitHub Actions
+* **Cloud:** Microsoft Azure (App Service)
+
+---
+
+# 🚀 CI/CD & DevOps
+
+Este projeto utiliza um pipeline de **CI/CD** automatizado com **GitHub Actions** para garantir a qualidade e a agilidade no desenvolvimento:
+
+### ✔ Continuous Integration (CI)
+A cada `push` ou `pull request` na branch principal, o pipeline executa automaticamente:
+* **Restore:** Restauração das dependências do projeto.
+* **Build:** Compilação da aplicação para verificar erros de sintaxe.
+* **Test:** Execução de testes automatizados para validar a integridade do código.
+
+### ☁️ Continuous Deployment (CD)
+O projeto está configurado para realizar o deploy automático no **Azure App Service**:
+* O processo automatiza o build em modo Release e a publicação da aplicação.
+* O deploy é realizado no ambiente de nuvem (região France Central) utilizando perfis de publicação seguros via GitHub Secrets.
 
 ---
 
 # Funcionalidades
 
-## Autenticação
-
-* Cadastro de usuários
-* Login com JWT
-* Criptografia segura de senhas com BCrypt
-* Geração de Token JWT
-* Validação de Token
-
----
-
-## Autorização
-
-* Rotas protegidas
-* Controle de acesso por Role
-* Roles:
-
-  * Administrator
-  * User
-
----
+## Autenticação e Autorização
+* Cadastro de usuários e login com geração de Token JWT.
+* Criptografia segura de senhas com BCrypt.
+* Controle de acesso baseado em **Roles**:
+  * `Administrator`: Acesso total, incluindo gestão de usuários.
+  * `User`: Acesso limitado a funcionalidades básicas.
 
 ## Usuários
-
-* Buscar todos os usuários
-* Buscar usuário autenticado
-* Acesso restrito baseado em permissões
+* Buscar todos os usuários (apenas para Administrator).
+* Buscar dados do usuário autenticado.
+* Proteção de rotas via Middleware e validação de Claims.
 
 ---
 
@@ -71,223 +75,43 @@ O objetivo do projeto foi praticar conceitos fundamentais de backend moderno, in
 ```bash
 LearnSecureAPI/
 │
-├── Controllers/
-├── Data/
-├── DTO/
-├── Mapper/
-├── Model/
-├── Services/
-├── Migrations/
-├── Program.cs
-└── appsettings.json
-```
-
----
+├── .github/workflows/   # Pipeline de automação CI/CD
+├── Controllers/         # Endpoints da API
+├── Data/                # Contexto do banco e configurações
+├── DTO/                 # Data Transfer Objects
+├── Mapper/              # Configurações do Mapster
+├── Model/               # Entidades do Banco de Dados
+├── Services/            # Lógica de negócio e serviços JWT
+├── Migrations/          # Versões do banco de dados
+├── Program.cs           # Configuração da aplicação
+└── appsettings.json     # Configurações de ambiente
 
 # Segurança Implementada
 
 ## BCrypt Password Hashing
 
-As senhas não são armazenadas em texto puro.
-
-O projeto utiliza BCrypt para:
-
-* Gerar hash seguro
-* Comparar senha digitada com hash salvo
-* Proteger credenciais dos usuários
+As senhas não são armazenadas em texto puro. O projeto utiliza o algoritmo BCrypt para gerar hashes seguros, dificultando ataques de força bruta e protegendo as credenciais dos usuários.
 
 ---
 
 ## JWT Authentication
 
-O projeto utiliza JWT para autenticação.
-
-O token contém:
-
-* Id do usuário
-* Username
-* Role
-* Tempo de expiração
-
-As rotas protegidas validam:
-
-* Assinatura do token
-* Expiração
-* Issuer
-* Audience
+O token JWT carrega Claims de identidade (ID, Username e Role). A API valida a assinatura, expiração, Issuer (emissor) e Audience (público) em cada requisição protegida.
 
 ---
 
-# Endpoints
+# Endpoints Principais
 
 ## Authentication
 
-### SignUp
-
-```http
-POST /User/SignUp
-```
-
-### Login
-
-```http
-POST /User/Login
-```
+- `POST /User/SignUp` → Cadastro de novos usuários  
+- `POST /User/Login` → Autenticação e recebimento do Token  
 
 ---
 
 ## Users
 
-### Get Logged User
-
-```http
-GET /User/Single
-```
-
-### Get All Users
-
-```http
-GET /User/GetAll
-```
-
-Acesso permitido apenas para:
-
-* Administrator
+- `GET /User/Single` → Retorna os dados do usuário autenticado  
+- `GET /User/GetAll` → Lista todos os usuários (Acesso restrito ao Administrator)  
 
 ---
-
-# Exemplo de Login
-
-## Request
-
-```json
-{
-  "email": "admin@gmail.com",
-  "password": "123456"
-}
-```
-
----
-
-## Response
-
-```json
-{
-  "token": "eyJhbGciOiJIUzI1NiIs..."
-}
-```
-
----
-
-# Como Utilizar o Token
-
-No Swagger ou Postman:
-
-```http
-Authorization: Bearer SEU_TOKEN
-```
-
----
-
-# Como Executar o Projeto
-
-## 1. Clone o repositório
-
-```bash
-git clone https://github.com/Felipe-fbastos/LearnSecureAPI.git
-```
-
----
-
-## 2. Acesse a pasta do projeto
-
-```bash
-cd LearnSecureAPI
-```
-
----
-
-## 3. Configure a Connection String
-
-No arquivo `appsettings.json`:
-
-```json
-"ConnectionStrings": {
-  "DefaultConnection": "SUA_CONNECTION_STRING"
-}
-```
-
----
-
-## 4. Configure a Secret Key JWT
-
-Utilize User Secrets:
-
-```bash
-dotnet user-secrets init
-```
-
-```bash
-dotnet user-secrets set "Jwt:Key" "SUA_SECRET_KEY"
-```
-
----
-
-## 5. Execute as Migrations
-
-```bash
-dotnet ef database update
-```
-
----
-
-## 6. Execute a aplicação
-
-```bash
-dotnet run
-```
-
----
-
-# Conceitos Praticados
-
-* JWT Authentication
-* Authorization Roles
-* BCrypt Password Hashing
-* Entity Framework Core
-* DTO Pattern
-* Dependency Injection
-* API Security
-* REST API
-* Claims
-* Protected Routes
-* ASP.NET Core Middleware
-
----
-
-# Melhorias Futuras
-
-* Refresh Token
-* Clean Architecture
-* FluentValidation
-* Global Exception Middleware
-* Docker
-* Unit Tests
-* Repository Pattern
-* Identity
-
----
-
-# Autor
-
-Desenvolvido por Felipe Bastos.
-
-GitHub:
-
-* [https://github.com/Felipe-fbastos](https://github.com/Felipe-fbastos)
-
----
-
-# Projeto para Estudos
-
-Este projeto foi desenvolvido com foco em aprendizado de autenticação segura em APIs modernas utilizando ASP.NET Core.
