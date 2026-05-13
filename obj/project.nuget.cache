@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+nhsSWBzPKI=",
+  "dgSpecHash": "GB2IE+tq5BA=",
   "success": true,
   "projectFilePath": "C:\\Users\\Felipe\\Desktop\\Estudos_C#\\LearnSecureAPI\\LearnSecureAPI\\LearnSecureAPI.csproj",
   "expectedPackageFiles": [
@@ -91,10 +91,8 @@
     {
       "code": "NU1603",
       "level": "Warning",
-      "message": "LearnSecureAPI depends on Mapster.DependencyInjection (>= 8.0.20) but Mapster.DependencyInjection 8.0.20 was not found. Mapster.DependencyInjection 10.0.0 was resolved instead.",
-      "projectPath": "C:\\Users\\Felipe\\Desktop\\Estudos_C#\\LearnSecureAPI\\LearnSecureAPI\\LearnSecureAPI.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Felipe\\Desktop\\Estudos_C#\\LearnSecureAPI\\LearnSecureAPI\\LearnSecureAPI.csproj",
+      "message": "LearnSecureAPI depends on Mapster.DependencyInjection (>= 8.0.20) but Mapster.DependencyInjection 8.0.20 was not found. An approximate best match of Mapster.DependencyInjection 10.0.0 was resolved.",
       "libraryId": "Mapster.DependencyInjection",
       "targetGraphs": [
         "net8.0"
