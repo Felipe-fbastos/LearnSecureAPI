@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LearnSecureAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c0e3859a9dc618492331573adff136cccafec63")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a42659a2bd022f3dabf5c525e46fbc2ba17e192")]
 [assembly: System.Reflection.AssemblyProductAttribute("LearnSecureAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LearnSecureAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -16,7 +16,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDataContext>(options => 
 
-    options.UseSqlServer("Server=localhost,1433;Database=LearnSecureAPI;User Id=sa;Password=*123456fE*;TrustServerCertificate=True;")
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnetion")
     );
 builder.Services.RegisterMapps();
 
